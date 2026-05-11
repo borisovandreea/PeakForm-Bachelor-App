@@ -1,3 +1,28 @@
 <resources>
     <string name="app_name">PeakForm</string>
+
+    <string name="title_dashboard">Performance Dashboard</string>
+    <string name="title_feedback">Reflective Feedback</string>
+    <string name="title_settings">Settings &amp; Privacy</string>
+
+    <string name="add_entry_title">Log New Activity</string>
+    <string name="hint_minutes">Minutes spent (e.g., 60)</string>
+    <string name="btn_save">Save Entry</string>
+
+    <string name="overall_score_label">Overall Performance Score</string>
+    <string name="score_description">Your score is based on your personalized weighting profile.</string>
+
+    <string name="btn_export_csv">Export Data (CSV)</string>
+    <string name="btn_erase_data">Erase All Data (GDPR)</string>
+    <string name="confirm_delete">This action cannot be undone. Are you sure?</string>
+    <string-array name="frequency_options">
+        <item>Daily</item>
+        <item>Weekly</item>
+        <item>Monthly</item>
+    </string-array>
+    <string name="chart_label_daily_activities">Individual Activity Score</string>
+    <string name="insight_no_data">No activities logged today. Start tracking to see your impact!</string>
+    <string name="insight_excellent">You are in the zone! All domains are optimized. Focus on recovery now to maintain this peak.</string>
+    <string name="insight_good">Good job! You are consistent, but try to increase focus on low-scoring tasks.</string>
+    <string name="insight_low">Your balance is a bit off right now, try completing a short session in your most neglected category.</string>
 </resources>

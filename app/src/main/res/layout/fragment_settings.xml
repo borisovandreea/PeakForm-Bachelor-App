@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F9FA">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingBottom="150dp"> <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Performance Settings"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#2D3436" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Customize your tracking preferences"
+            android:textColor="#636E72"
+            android:layout_marginBottom="24dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Domains &amp; Goals"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/tvTotalWeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="Total: 100%"
+                android:textColor="#2E7D32"
+                android:background="#E8F5E9"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="4dp"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/domainsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnAddDomain"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="32dp"
+            android:text="+ ADD CUSTOM DOMAIN"
+            android:textColor="#0061FF"
+            app:strokeColor="#0061FF"
+            app:icon="@android:drawable/ic_input_add"
+            app:iconTint="#0061FF" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data Management (GDPR)"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="12dp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            android:layout_marginBottom="20dp"
+            app:cardElevation="2dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <Button
+                    android:id="@+id/btnExportCSV"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Export My Data (CSV)"
+                    android:textAlignment="viewStart"
+                    app:icon="@android:drawable/ic_menu_save"
+                    android:padding="12dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#EEEEEE"
+                    android:layout_marginHorizontal="12dp" />
+
+                <Button
+                    android:id="@+id/btnClearActivity"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Clear All Activity Data"
+                    android:textColor="#FBC02D"
+                    android:textAlignment="viewStart"
+                    app:icon="@android:drawable/ic_dialog_alert"
+                    app:iconTint="#FBC02D"
+                    android:padding="12dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#EEEEEE"
+                    android:layout_marginHorizontal="12dp" />
+
+                <Button
+                    android:id="@+id/btnDeleteProfile"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Delete Profile &amp; Reset App"
+                    android:textColor="#D32F2F"
+                    android:textAlignment="viewStart"
+                    app:icon="@android:drawable/ic_menu_delete"
+                    app:iconTint="#D32F2F"
+                    android:padding="12dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#FFFFFF"
+        android:padding="16dp"
+        android:elevation="12dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnReset"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Reset Weights"
+            android:layout_marginEnd="8dp" />
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Save Changes"
+            android:backgroundTint="#0061FF"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

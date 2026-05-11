@@ -1,18 +1,19 @@
 package com.example.peakform.data.entity;
 
-import androidx.annotation.NonNull;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
-@Entity
+@Entity(tableName = "feedback_events")
 public class FeedbackEvent {
     @PrimaryKey(autoGenerate = true)
     public int id;
 
+    public String message;
+    public String bctType;
     public long timestamp;
 
-    @NonNull
-    public String message;
 
-    public float relatedScore;
+    public String getDescription() {
+        return message;
+    }
 }

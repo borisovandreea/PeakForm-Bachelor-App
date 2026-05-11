@@ -1,54 +1,20 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="20dp"
-    android:background="#FDFDFD">
+    android:layout_height="match_parent">
 
-    <TextView
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_navigation" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Life Balance Score"
-        android:gravity="center"
-        android:textAllCaps="true"
-        android:letterSpacing="0.1"
-        android:textColor="#666666"/>
-
-    <TextView
-        android:id="@+id/text_performance_score"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="0"
-        android:textSize="80sp"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:textColor="#6200EE" />
-
-    <com.github.mikephil.charting.charts.HorizontalBarChart
-        android:id="@+id/performance_chart"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:layout_marginTop="16dp"
-        android:background="#FFFFFF" />
-
-    <Button
-        android:id="@+id/button_add_another"
-        android:layout_width="match_parent"
-        android:layout_height="64dp"
-        android:text="ADD ANOTHER ACTIVITY"
-        android:layout_marginTop="16dp"
-        android:backgroundTint="#6200EE"
-        android:textColor="#FFFFFF"
-        android:textStyle="bold"
-        android:elevation="4dp"/>
-
-    <Button
-        android:id="@+id/button_clear"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Reset Dashboard"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:textColor="#999999"/>
-
-</LinearLayout>
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        app:elevation="8dp"
+        app:menu="@menu/bottom_nav_menu" /> </RelativeLayout>
