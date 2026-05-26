@@ -17,5 +17,9 @@
     <color name="score_low">#C62828</color>
     <color name="chart_label_color">#666666</color>
     <color name="chart_grid_color">#EEEEEE</color>
-    <color name="error_red">#FF5252</color> </resources>
+    <color name="error_red">#FF5252</color>
+    <color name="insight_green_bg">#C8E6C9</color>
+    <color name="insight_blue_bg">#BBDEFB</color>
+    <color name="insight_purple_bg">#E1BEE7</color>
+</resources>
 
